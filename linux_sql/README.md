@@ -50,7 +50,7 @@ crontab -e
 * * * * * bash ./scripts/host_usage.sh localhost 5432 host_agent postgres password > /tmp/host_usage.log
 ```
 ## Architecture Diagram
-![my image](./assets/Linux_sql_architecture_diagram.png)
+![my image](assets/Linux_sql_architecture_diagram.png)
 
 Each Linux node is connected through a switch. One node has the PSQL instance, and thus can send the results from its scripts directly to it. The other nodes must send their results through the switch to get to the database.
 
